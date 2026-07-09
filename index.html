@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AmazFaces BIN Builder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<h1>⌚ BIN Builder</h1>
+<label>📂 上傳表盤檔案<input id="project" type="file"></label>
+<label>🖼 選擇 Icon<input id="icon" type="file" accept="image/*" capture="environment"></label>
+<button id="build">📦 打包 BIN</button>
+<button id="download" disabled>⬇️ 下載 BIN</button>
+<button id="qr">▣ 生成 QR Code</button>
+<canvas id="canvas"></canvas>
+<p id="status">等待操作</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
