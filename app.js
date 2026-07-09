@@ -1,1 +1,0 @@
-document.getElementById('buildBtn').onclick=()=>{const f=document.getElementById('zipFile').files[0];if(!f){status.textContent='Please choose a ZIP file.';return;}status.textContent='Frontend ready. Connect to backend to build BIN.';}
